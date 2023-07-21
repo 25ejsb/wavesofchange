@@ -1,3 +1,6 @@
 {
-    "name": "wavesofchange"
+    "name": "wavesofchange",
+    "dependencies": {
+        "gunicorn": "^23.2"
+    }
 }
