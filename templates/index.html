@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <title>Waves of Change - Home</title>
+    <link rel="icon" href="static/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="/#"><img src="static/images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="navbar-right">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#resources">Resources</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <h1>Waves of Change</h1>
+        <h2>Learn from the past, Plan for the future, Live in the present</h2>
+        <div class="header-buttons">
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </header>
+    <section class="about-section">
+        <h1>About Me</h1>
+        <h2>Stacy J Ott</h2>
+        <div class="about-section-main">
+            <div class="about-img">
+                <img src="https://photos.psychologytoday.com/3489de0b-efbf-485e-a871-01ce3a20295a/3/320x400.jpeg" alt="Stacy Ott">
+            </div>
+            <div class="about-paras">
+                <p>Choosing a therapist can be a frightening and overwhelming task. For therapy to be most effective, it is important to find someone you are able to connect with, feel comfortable to share, process and cope with life’s most challenging struggles. I have 10 years of experience working in the field of mental health and relationships. My specialties are Gender affirming care, mental health, addiction, healthy relationship building. I have developed a system of therapeutic tools to process feelings, build healthier relationships deal with</p>
+                <p>I aim my clinical approach to meet you where you are at, while we cooperatively work together to maximize skills and learn how to manage life on life's terms. I utilize various therapeutic modalities in my practice. I apply Relational Therapy, Cognitive Behavioral, Acceptance Commitment Therapy, Self-Compassion & Forgiveness Based Treatment.</p>
+                <p>I have great respect and passion for the work I do, and truly care for those who choose to enter into therapy. My practice is built on privacy, respect and trust, but most importantly, focuses on hope and change. It is my hope that in doing so we will achieve your goals together and your experience in therapy will be a positive one.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navbar = document.querySelector(".navbar")
+        setInterval(() => {
+            if (window.scrollY <= 100) {
+                navbar.classList.remove("navbar-sticky")
+            } else {
+                navbar.classList.add("navbar-sticky")
+            }
+        }, 1)
+    </script>
+    <script>
+        var headerh1 = document.querySelector(".header h1")
+        setInterval(() => {
+            headerh1.style = "letter-spacing: " + (window.scrollY/15) + "px;"
+        })
+    </script>
+</body>
+</html>
